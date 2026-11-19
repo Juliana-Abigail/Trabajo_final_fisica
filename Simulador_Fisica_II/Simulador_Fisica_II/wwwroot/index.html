@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorio de Física II</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="fisica.js"></script>
+  <script defer src="graficos.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="modelos.js"></script>
+  <script defer src="laboratorio.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#inicio"><span class="symbol" aria-hidden="true">∿</span> Laboratorio de Física II</a>
+    <nav aria-label="Navegación principal">
+      <a data-route="0" href="#inicio">Inicio</a>
+      <a data-route="1" href="#unidad-1">Unidad 1</a>
+      <a data-route="2" href="#unidad-2">Unidad 2</a>
+      <a data-route="3" href="#unidad-3">Unidad 3</a>
+      <a data-route="4" href="#unidad-4">Unidad 4</a>
+    </nav>
+  </header>
+  <main>
+    <section id="unit0" class="home" aria-labelledby="heading0">
+      <div class="hero">
+        <div class="hero-copy">
+          <h1 id="heading0" tabindex="-1">Laboratorio de<br><em>Física II</em></h1>
+          <p>Explora la electricidad y el magnetismo con simuladores interactivos.</p>
+        </div>
+        <canvas id="hero-field" width="610" height="300" aria-hidden="true"></canvas>
+      </div>
+      <h2 class="choose-heading">Elige una unidad</h2>
+      <div class="unit-grid">
+        <a href="#unidad-1" class="unit-card electric">
+          <span class="unit-icon" aria-hidden="true">±</span><span class="unit-label">Unidad 1</span>
+          <strong>Campo eléctrico y potencial</strong><span>Cargas puntuales, equipotenciales y trayectorias.</span><span class="unit-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#unidad-2" class="unit-card capacitor">
+          <span class="unit-icon" aria-hidden="true">‖</span><span class="unit-label">Unidad 2</span>
+          <strong>Capacitores y dieléctricos</strong><span>Placas paralelas y energía almacenada.</span><span class="unit-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#unidad-3" class="unit-card circuit">
+          <span class="unit-icon" aria-hidden="true">Ω</span><span class="unit-label">Unidad 3</span>
+          <strong>Corriente y ley de Ohm</strong><span>Circuitos en serie, paralelo y mixtos.</span><span class="unit-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#unidad-4" class="unit-card magnetic">
+          <span class="unit-icon" aria-hidden="true">⊙</span><span class="unit-label">Unidad 4</span>
+          <strong>Fuerza y campo magnético</strong><span>Imanes, corrientes y fuerza de Lorentz.</span><span class="unit-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+    <section id="unit1" aria-labelledby="heading1" hidden>
+      <h1 id="heading1" tabindex="-1">Campo eléctrico y potencial</h1>
+      <div class="tabs" aria-label="Módulos de la unidad 1">
+        <button type="button" data-module="campo" aria-pressed="true">Cargas puntuales</button>
+        <button type="button" data-module="potencial" aria-pressed="false">Potencial</button>
+        <button type="button" data-module="trayectoria" aria-pressed="false">Trayectoria</button>
+      </div>
+      <div class="layout">
+        <div class="card">
+          <section id="campo" class="module">
+            <div class="toolbar">
+              <h2>Visualizador de cargas</h2>
+              <div class="toggle" aria-label="Dimensiones de la vista">
+                <button id="view2d" type="button" aria-pressed="true">2D</button>
+                <button id="view3d" type="button" aria-pressed="false">3D</button>
+              </div>
+            </div>
+            <div class="layers">
+              <label><input id="lines" type="checkbox" checked> Líneas de campo</label>
+              <label><input id="surfaces" type="checkbox" checked> Equipotenciales</label>
+              <label id="slice-label">Corte z (m) <input id="slice" type="number" min="-5" max="5" step="any" value="0"></label>
+              <label id="level-label" hidden>Superficie (V) <input id="level" type="number" step="any" value="3000"></label>
+            </div>
+            <canvas id="field-plot" width="800" height="500" tabindex="0" aria-label="Visualización del campo eléctrico. En 3D puedes girar la vista con las flechas."></canvas>
+            <p id="field-note" class="hint"></p>
+          </section>
+          <section id="potencial" class="module" hidden>
+            <h2>Calculadora de potencial</h2>
+            <form id="potential-form">
+              <fieldset class="inputs">
+                <legend>Punto de evaluación</legend>
+                <label>x (m)<input name="x" type="number" step="any" value="0" required></label>
+                <label>y (m)<input name="y" type="number" step="any" value="2" required></label>
+                <label>z (m)<input name="z" type="number" step="any" value="0" required></label>
+              </fieldset>
+            </form>
+            <div id="potential-result" class="metric" role="status"></div>
+            <div class="formula">V = k Σ(qᵢ / rᵢ)</div>
+            <div id="contributions"></div>
+          </section>
+          <section id="trayectoria" class="module" hidden>
+            <h2>Trayectoria de una partícula</h2>
+            <form id="particle-form">
+              <fieldset class="inputs">
+                <legend>Posición inicial en el plano XY (m)</legend>
+                <label>x₀<input name="x" type="number" min="-5" max="5" step="any" value="-3" required></label>
+                <label>y₀<input name="y" type="number" min="-5" max="5" step="any" value="-2" required></label>
+              </fieldset>
+              <fieldset class="inputs">
+                <legend>Condiciones de lanzamiento</legend>
+                <label>vₓ (m/s)<input name="vx" type="number" min="-100" max="100" step="any" value="2" required></label>
+                <label>vᵧ (m/s)<input name="vy" type="number" min="-100" max="100" step="any" value="1" required></label>
+                <label>Carga (µC)<input name="q" type="number" min="-100" max="100" step="any" value="1" required></label>
+                <label>Masa (g)<input name="mass" type="number" min="0.001" max="10000" step="any" value="10" required></label>
+                <label>Duración (s)<input name="duration" type="number" min="0.1" max="30" step="any" value="5" required></label>
+              </fieldset>
+              <div class="actions">
+                <button class="primary" type="submit">Lanzar partícula</button>
+                <button id="reset-particle" type="button">Reiniciar</button>
+              </div>
+            </form>
+            <canvas id="particle-plot" width="800" height="500" aria-label="Trayectoria de la partícula en el plano XY"></canvas>
+            <p id="particle-status" class="hint" role="status"></p>
+            <p class="hint">Movimiento restringido a z = 0. La simulación se detiene al salir del área visible o pasar a 0,08 m de una carga.</p>
+          </section>
+        </div>
+        <aside class="card charges">
+          <div class="toolbar"><h2>Cargas fuente</h2><span id="charge-count"></span></div>
+          <div class="actions presets">
+            <button type="button" data-preset="single">Una carga</button>
+            <button type="button" data-preset="dipole">Dipolo</button>
+          </div>
+          <div id="charge-list"></div>
+          <button id="add-charge" class="primary" type="button">Añadir carga</button>
+          <p class="hint">Edita la carga en µC y su posición en metros.</p>
+        </aside>
+      </div>
+    </section>
+    <section id="unit2" aria-labelledby="heading2" hidden>
+      <h1 id="heading2" tabindex="-1">Capacitores y dieléctricos</h1>
+      <div class="layout capacitor-layout">
+        <section class="card">
+          <h2>Simulador de placas paralelas</h2>
+          <form id="capacitor-form">
+            <fieldset class="inputs">
+              <legend>Geometría y material</legend>
+              <label>Área (cm²)<input name="area" type="number" min="0.01" max="1000000" step="any" value="200" required></label>
+              <label>Separación (mm)<input name="gap" type="number" min="0.01" max="1000" step="any" value="2" required></label>
+              <label>Dieléctrico<select name="material">
+                <option value="1">Aire (≈ 1)</option><option value="2.1">PTFE (≈ 2,1)</option>
+                <option value="3.9">Sílice (≈ 3,9)</option><option value="6">Mica (≈ 6)</option>
+                <option value="custom">Personalizado</option>
+              </select></label>
+              <label id="custom-label" hidden>Permitividad relativa εᵣ<input name="permittivity" type="number" min="1" max="10000" step="any" value="2" required disabled></label>
+            </fieldset>
+          </form>
+          <canvas id="capacitor-plot" width="800" height="300" aria-label="Esquema del capacitor de placas paralelas"></canvas>
+          <div id="capacitance-result" class="metric" role="status"></div>
+          <div class="formula">C = ε₀ εᵣ A / d</div>
+          <p class="hint">Modelo ideal. Las placas se representan de forma esquemática y el dieléctrico llena el espacio entre ellas.</p>
+        </section>
+        <section class="card">
+          <h2>Calculadora de energía</h2>
+          <form id="energy-form">
+            <label class="check"><input name="linked" type="checkbox" checked> Usar la capacitancia del simulador</label>
+            <fieldset class="inputs">
+              <legend>Valores de cálculo</legend>
+              <label>Capacitancia (pF)<input name="capacitance" type="number" min="0" step="any" required readonly></label>
+              <label>Voltaje (V)<input name="voltage" type="number" step="any" value="12" required></label>
+            </fieldset>
+          </form>
+          <div id="energy-result" class="metric" role="status"></div>
+          <div class="formula">U = ½ C V²</div>
+        </section>
+      </div>
+    </section>
+    <section id="unit3" aria-labelledby="heading3" hidden>
+      <h1 id="heading3" tabindex="-1">Corriente eléctrica y ley de Ohm</h1>
+      <div class="tabs" aria-label="Módulos de la unidad 3">
+        <button type="button" data-panel="circuit-panel" aria-pressed="true">Simulador de circuitos</button>
+        <button type="button" data-panel="ohm-panel" aria-pressed="false">Ley de Ohm</button>
+      </div>
+      <section id="circuit-panel" class="layout">
+        <div class="card">
+          <h2>Esquema del circuito</h2>
+          <canvas id="circuit-plot" width="820" height="320" aria-label="Esquema de la fuente y las resistencias conectadas"></canvas>
+          <div id="circuit-total" class="metric" role="status"></div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th scope="col">Resistencia</th><th scope="col">Corriente (A)</th><th scope="col">Voltaje (V)</th><th scope="col">Potencia (W)</th></tr></thead>
+              <tbody id="circuit-rows"></tbody>
+            </table>
+          </div>
+        </div>
+        <form id="circuit-form" class="card">
+          <h2>Componentes</h2>
+          <fieldset class="inputs">
+            <legend>Fuente y conexión</legend>
+            <label>Voltaje (V)<input name="voltage" type="number" min="0" max="10000" step="any" value="12" required></label>
+            <label>Conexión<select name="topology"><option value="series">Serie</option><option value="parallel">Paralelo</option><option value="mixed">Mixto</option></select></label>
+          </fieldset>
+          <p id="circuit-mixed-note" class="hint" hidden>Elige en qué tramo conectar cada resistencia. Puedes crear hasta tres ramas en paralelo.</p>
+          <div id="resistors"></div>
+          <button id="add-resistor" class="primary" type="button">Añadir resistencia</button>
+          <p id="circuit-help" class="hint"></p>
+        </form>
+      </section>
+      <section id="ohm-panel" class="layout" hidden>
+        <div class="card">
+          <h2>Voltaje frente a corriente</h2>
+          <canvas id="ohm-plot" width="820" height="415" aria-label="Gráfica de voltaje en función de corriente con la medición seleccionada"></canvas>
+          <div id="ohm-result" class="metric" role="status"></div>
+        </div>
+        <form id="ohm-form" class="card">
+          <h2>Variables</h2>
+          <div class="formula">V = I R</div>
+          <fieldset class="inputs">
+            <legend>Variable a calcular</legend>
+            <label>Despejar<select name="solve"><option value="current">Corriente</option><option value="voltage">Voltaje</option><option value="resistance">Resistencia</option></select></label>
+          </fieldset>
+          <fieldset class="inputs">
+            <legend>Valores de entrada</legend>
+            <label>Voltaje (V)<input name="voltage" type="number" min="0" max="10000" value="12" step="any" required></label>
+            <label>Corriente (A)<input name="current" type="number" min="0" max="10000" value="0.6" step="any" required></label>
+            <label>Resistencia (Ω)<input name="resistance" type="number" min="0.01" max="100000000" value="20" step="any" required></label>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+    <section id="unit4" aria-labelledby="heading4" hidden>
+      <h1 id="heading4" tabindex="-1">Fuerza y campo magnético</h1>
+      <div class="tabs" aria-label="Módulos de la unidad 4">
+        <button type="button" data-panel="magnetic-panel" aria-pressed="true">Campo magnético</button>
+        <button type="button" data-panel="lorentz-panel" aria-pressed="false">Fuerza de Lorentz</button>
+      </div>
+      <section id="magnetic-panel" class="layout">
+        <div class="card">
+          <h2>Líneas del campo magnético</h2>
+          <canvas id="magnetic-plot" tabindex="0" width="820" height="490" aria-label="Líneas del campo magnético para el imán o el conductor seleccionado"></canvas>
+          <div id="magnetic-result" class="metric" role="status"></div>
+          <p id="magnetic-note" class="hint"></p>
+        </div>
+        <form id="magnetic-form" class="card">
+          <h2>Fuente del campo</h2>
+          <fieldset class="inputs">
+            <legend>Modelo y vista</legend>
+            <label>Fuente<select name="source"><option value="magnet">Imán (dipolo)</option><option value="wire">Conductor recto</option></select></label>
+            <label>Vista<select name="view"><option value="plane">Corte 2D</option><option value="space">Vista 3D</option></select></label>
+          </fieldset>
+          <fieldset class="inputs">
+            <legend>Intensidad y orientación</legend>
+            <label id="magnet-strength">Momento (A·m²)<input name="moment" type="number" min="0" max="10000" step="any" value="8" required></label>
+            <label id="wire-strength" hidden>Corriente (A)<input name="current" type="number" min="0" max="10000" step="any" value="5" required disabled></label>
+            <label>Sentido<select name="direction"><option value="1">Normal</option><option value="-1">Invertido</option></select></label>
+          </fieldset>
+        </form>
+      </section>
+      <section id="lorentz-panel" class="layout" hidden>
+        <div class="card">
+          <h2>Trayectoria en campos cruzados</h2>
+          <canvas id="lorentz-plot" width="820" height="490" aria-label="Trayectoria de la partícula en el plano XY"></canvas>
+          <div id="lorentz-result" class="metric" role="status"></div>
+          <div class="formula">F = q(E + v × B)</div>
+          <p class="hint">Partícula clásica en el plano XY. Campo eléctrico uniforme en y y campo magnético uniforme en z.</p>
+        </div>
+        <form id="lorentz-form" class="card">
+          <h2>Condiciones iniciales</h2>
+          <label class="select-label">Ejemplo<select name="preset"><option value="custom">Personalizado</option><option value="selector" selected>Selector de velocidades</option><option value="circle">Movimiento circular</option><option value="crossed">Deriva en campos cruzados</option></select></label>
+          <fieldset class="inputs">
+            <legend>Campos y partícula</legend>
+            <label>Eᵧ (V/m)<input name="electric" type="number" min="-100" max="100" step="any" value="2" required></label>
+            <label>B𝓏 (T)<input name="magnetic" type="number" min="-100" max="100" step="any" value="1" required></label>
+            <label>Carga (mC)<input name="charge" type="number" min="-1000" max="1000" step="any" value="10" required></label>
+            <label>Masa (g)<input name="mass" type="number" min="0.1" max="1000" step="any" value="10" required></label>
+          </fieldset>
+          <fieldset class="inputs">
+            <legend>Lanzamiento desde el origen</legend>
+            <label>vₓ (m/s)<input name="vx" type="number" min="-100" max="100" step="any" value="2" required></label>
+            <label>vᵧ (m/s)<input name="vy" type="number" min="-100" max="100" step="any" value="0" required></label>
+            <label>Duración (s)<input name="duration" type="number" min="0.1" max="20" step="any" value="8" required></label>
+          </fieldset>
+          <div class="actions">
+            <button class="primary" type="submit">Lanzar partícula</button>
+            <button id="pause-lorentz" type="button" disabled>Pausar</button>
+            <button id="reset-lorentz" type="button">Reiniciar</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

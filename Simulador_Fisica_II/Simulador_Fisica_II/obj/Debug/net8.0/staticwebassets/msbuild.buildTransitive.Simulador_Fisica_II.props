@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Simulador_Fisica_II.props" />
+</Project>

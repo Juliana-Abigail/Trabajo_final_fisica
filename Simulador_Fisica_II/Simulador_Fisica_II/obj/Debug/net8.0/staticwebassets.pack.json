@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Escritorio\\Clases 2026\\Cuarto ciclo\\Física II\\Unidad 4\\Simulador_Fisica_II\\Simulador_Fisica_II\\Simulador_Fisica_II\\wwwroot\\app.js",
+      "PackagePath": "staticwebassets\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Escritorio\\Clases 2026\\Cuarto ciclo\\Física II\\Unidad 4\\Simulador_Fisica_II\\Simulador_Fisica_II\\Simulador_Fisica_II\\wwwroot\\estilos.css",
+      "PackagePath": "staticwebassets\\estilos.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Escritorio\\Clases 2026\\Cuarto ciclo\\Física II\\Unidad 4\\Simulador_Fisica_II\\Simulador_Fisica_II\\Simulador_Fisica_II\\wwwroot\\fisica.js",
+      "PackagePath": "staticwebassets\\fisica.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Escritorio\\Clases 2026\\Cuarto ciclo\\Física II\\Unidad 4\\Simulador_Fisica_II\\Simulador_Fisica_II\\Simulador_Fisica_II\\wwwroot\\graficos.js",
+      "PackagePath": "staticwebassets\\graficos.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Escritorio\\Clases 2026\\Cuarto ciclo\\Física II\\Unidad 4\\Simulador_Fisica_II\\Simulador_Fisica_II\\Simulador_Fisica_II\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Escritorio\\Clases 2026\\Cuarto ciclo\\Física II\\Unidad 4\\Simulador_Fisica_II\\Simulador_Fisica_II\\Simulador_Fisica_II\\wwwroot\\laboratorio.js",
+      "PackagePath": "staticwebassets\\laboratorio.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Escritorio\\Clases 2026\\Cuarto ciclo\\Física II\\Unidad 4\\Simulador_Fisica_II\\Simulador_Fisica_II\\Simulador_Fisica_II\\wwwroot\\modelos.js",
+      "PackagePath": "staticwebassets\\modelos.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Simulador_Fisica_II.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Simulador_Fisica_II.props",
+      "PackagePath": "build\\Simulador_Fisica_II.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Simulador_Fisica_II.props",
+      "PackagePath": "buildMultiTargeting\\Simulador_Fisica_II.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Simulador_Fisica_II.props",
+      "PackagePath": "buildTransitive\\Simulador_Fisica_II.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

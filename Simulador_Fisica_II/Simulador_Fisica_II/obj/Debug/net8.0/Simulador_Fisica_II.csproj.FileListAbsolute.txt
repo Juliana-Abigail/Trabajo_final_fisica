@@ -1,0 +1,48 @@
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.staticwebassets.runtime.json
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.exe
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.deps.json
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.runtimeconfig.json
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.dll
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.pdb
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.Simulador_Fisica_II.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.build.Simulador_Fisica_II.props
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Simulador_Fisica_II.props
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Simulador_Fisica_II.props
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\scopedcss\bundle\Simulador_Fisica_II.styles.css
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.dll
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\refint\Simulador_Fisica_II.dll
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.pdb
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.genruntimeconfig.cache
+C:\Users\Usuario\OneDrive\Desktop\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\ref\Simulador_Fisica_II.dll
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.staticwebassets.runtime.json
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.exe
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.deps.json
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.runtimeconfig.json
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.dll
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\bin\Debug\net8.0\Simulador_Fisica_II.pdb
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.AssemblyInfoInputs.cache
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.AssemblyInfo.cs
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.Simulador_Fisica_II.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.build.Simulador_Fisica_II.props
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Simulador_Fisica_II.props
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Simulador_Fisica_II.props
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\scopedcss\bundle\Simulador_Fisica_II.styles.css
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.dll
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\refint\Simulador_Fisica_II.dll
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.pdb
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\Simulador_Fisica_II.genruntimeconfig.cache
+C:\Users\USER\OneDrive\Escritorio\Clases 2026\Cuarto ciclo\Física II\Unidad 4\Simulador_Fisica_II\Simulador_Fisica_II\Simulador_Fisica_II\obj\Debug\net8.0\ref\Simulador_Fisica_II.dll
